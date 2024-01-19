@@ -4,6 +4,8 @@ const { stdin, stdout } = process;
 
 const myPath = path.join(__dirname, 'text.txt');
 
+// new data to be added/appended - flag a
+
 function writeData(data) {
   fs.writeFile(myPath, data, { flag: 'a' }, () => {});
 }
